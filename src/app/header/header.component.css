@@ -1,0 +1,30 @@
+#header-bar {
+  height: 80px;
+  border-bottom: 1px solid black;
+}
+
+#header-logo {
+  float: left;
+  height: 100%;
+  width: 100px;
+  background-color: #000;
+}
+
+#logo-button {
+  height:100%;
+  color: #FFF;
+}
+
+#header-nav {
+  height:100%;
+}
+
+.nav-button {
+  border: 1px solid red;
+  float: right;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+}
