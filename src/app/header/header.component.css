@@ -1,12 +1,12 @@
 #header-bar {
   height: 80px;
   border-bottom: 1px solid black;
+  margin-bottom: 20px;
 }
 
 #header-logo {
   float: left;
   height: 100%;
-  width: 100px;
   background-color: #000;
 }
 
@@ -15,14 +15,26 @@
   color: #FFF;
 }
 
+#logo-text {
+  padding: 25px;
+  font-size: x-large;
+}
+
 #header-nav {
   height:100%;
 }
 
 .nav-button {
-  border: 1px solid red;
+  outline: 3px dotted blue;
   float: right;
   color: #000;
+  height: 77px;
+  margin: 0 10px 0 10px;
+}
+
+.nav-text {
+  padding: 25px;
+  font-size: larger;
 }
 
 a {

@@ -1,0 +1,27 @@
+#contact {
+  text-align: center;
+  margin: 0 30% 0 30%;
+}
+
+.contact-field {
+  margin: 20px 0 20px 0;
+}
+
+.ng-touched .ng-invalid {
+  background-color: bisque;
+}
+
+label {
+  width: 20%;
+  float: left;
+  text-align: left;
+  font-size: larger;
+}
+
+input {
+  width: 70%;
+}
+
+button {
+  margin-top: 10px;
+}

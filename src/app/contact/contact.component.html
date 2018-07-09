@@ -1,3 +1,17 @@
-<p>
-  contact works!
-</p>
+<div id="contact">
+  <h2>Contact</h2>
+  <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+    <div class="contact-field">
+        <label for="message">Message:</label>
+        <input type="text" name="message" id=message [(ngModel)]="message" required>
+    </div>
+    <div class="contact-field">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id=name [(ngModel)]="name">
+    </div>
+    <button [disabled]="!contactForm.form.valid" type="submit">Send</button>
+  </form>
+  <div id="message-sent">
+    <p> {{ messageConfirmation }}</p>
+  </div>
+</div>
