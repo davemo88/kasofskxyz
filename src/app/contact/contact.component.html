@@ -9,9 +9,11 @@
       <label for="name">Name:</label>
       <input type="text" name="name" id=name [(ngModel)]="name">
     </div>
-    <button [disabled]="!contactForm.form.valid" type="submit">Send</button>
+    <button [disabled]="!contactForm.form.valid||sending" type="submit">Send</button>
   </form>
-  <div id="message-sent">
+  <div>
+    <br>
+    <div *ngIf="sending" class="lds-dual-ring"></div>
     <p> {{ messageConfirmation }}</p>
   </div>
 </div>
